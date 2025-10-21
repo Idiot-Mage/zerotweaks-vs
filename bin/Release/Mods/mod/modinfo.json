@@ -1,0 +1,12 @@
+{
+  "type": "code",
+  "modid": "zerotweaks",
+  "name": "zerotweaks",
+  "description" : "Adds various tweaks",
+  "authors": ["IdiotMage"],
+  "version": "0.0.6",
+  "side": "Universal",
+  "dependencies": {
+    "game": "1.20.x-1.21.x"
+  }
+}

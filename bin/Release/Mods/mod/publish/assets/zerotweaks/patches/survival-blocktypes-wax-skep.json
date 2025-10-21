@@ -1,0 +1,30 @@
+[
+  {
+    "op": "replace",
+    "path": "/drops/1/code",
+    "value": "skep-empty-east",
+    "file": "game:blocktypes/wax/skep.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/drops/1/quantity/avg",
+    "value": 1,
+    "file": "game:blocktypes/wax/skep.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/drops/1/quantity/var",
+    "value": 0,
+    "file": "game:blocktypes/wax/skep.json",
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/drops/1/type",
+    "value": "block",
+    "file": "game:blocktypes/wax/skep.json",
+    "side": "Server"
+  }
+]

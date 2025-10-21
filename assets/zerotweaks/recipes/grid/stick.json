@@ -1,0 +1,21 @@
+{
+	"ingredientPattern": "Q,W",
+	"width": 1,
+	"height": 2,
+	"ingredients":{
+		"Q":{
+			"type":"item",
+			"code":"game:axe-*",
+			"isTool":true
+		},
+		"W": {
+			"type":"item",
+			"code":"game:firewood"
+		}
+	},
+	"output":{
+		"type":"item",
+		"code":"game:stick",
+		"quantity":2
+	}
+}

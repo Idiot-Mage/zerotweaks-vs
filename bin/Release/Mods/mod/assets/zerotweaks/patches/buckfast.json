@@ -1,0 +1,3 @@
+[
+	{ side: "server", file: "game:blocktypes/clay/jug", op: "replace", path:"/attributes/liquidContainerPropsByType/*-fired/transferSizeLitres", value: 0.2 }
+]

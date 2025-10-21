@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WVuwtGXPNrlkIhhut672vG+pqFsnvccQNs3Zp2Q5J42wU0HuHvSKdagQn4JbbHKwdvCSsrI6hqITR3Cv+sw75Q==",
+  "success": true,
+  "projectFilePath": "/media/gamedisk/vintagestory/zerotweaks/zerotweaks/zerotweaks.csproj",
+  "expectedPackageFiles": [
+    "/home/zero/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/zero/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

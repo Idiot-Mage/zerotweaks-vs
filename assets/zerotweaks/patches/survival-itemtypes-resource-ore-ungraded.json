@@ -1,0 +1,66 @@
+[
+  {
+    "op": "add",
+    "path": "/combustiblePropsByType/ore-cinnabar",
+    "value": {
+      "meltingPoint": 1400,
+      "meltingDuration": 30,
+      "smeltedRatio": 4,
+      "smeltedStack": {
+        "type": "block",
+        "code": "glass-red",
+        "stacksize": 2
+      }
+    },
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/combustiblePropsByType/ore-lapislazuli",
+    "value": {
+      "meltingPoint": 1400,
+      "meltingDuration": 30,
+      "smeltedRatio": 4,
+      "smeltedStack": {
+        "type": "block",
+        "code": "glass-blue",
+        "stacksize": 2
+      }
+    },
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/combustiblePropsByType/ore-phosphorite",
+    "value": {
+      "meltingPoint": 1400,
+      "meltingDuration": 30,
+      "smeltedRatio": 4,
+      "smeltedStack": {
+        "type": "block",
+        "code": "glass-brown",
+        "stacksize": 2
+      }
+    },
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server"
+  },
+  {
+    "op": "add",
+    "path": "/combustiblePropsByType/ore-sulfur",
+    "value": {
+      "meltingPoint": 1400,
+      "meltingDuration": 30,
+      "smeltedRatio": 8,
+      "smeltedStack": {
+        "type": "block",
+        "code": "glass-yellow",
+        "stacksize": 2
+      }
+    },
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server"
+  }
+]
