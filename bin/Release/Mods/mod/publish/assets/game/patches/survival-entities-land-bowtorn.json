@@ -3,7 +3,8 @@
 		"op": "add",
 		"path": "/server/behaviors/-",
 		"value" :{"code":"zerotweaksRust"},
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/land/bowtorn.json",
+		"side": "server"
 	},
     
     

@@ -3,7 +3,8 @@
 		"op": "add",
 		"path": "/server/behaviors/-",
 		"value" :{"code":"zerotweaksRust"},
-		"file":"entities/land/shiver.json"
+		"file":"entities/land/shiver.json",
+		"side": "server"
 	},
     
     

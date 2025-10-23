@@ -1,6 +1,8 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-entities-land-bowtorn.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-entities-land-drifter.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-entities-land-shiver.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/entities/land/wraith.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/itemtypes/wraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/lang/en.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/patches/buckfast.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/patches/survival-blocktypes-wax-skep.json
@@ -11,6 +13,7 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/patches/survival-itemtypes-resource-quartz-smokyquartz.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/recipes/grid/quiver.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/recipes/grid/stick.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/shapes/entity/land/vswraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/modinfo.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/zerotweaks.deps.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/zerotweaks.dll
@@ -20,6 +23,7 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/zerotweaks.AssemblyInfoInputs.cache
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/zerotweaks.AssemblyInfo.cs
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/zerotweaks.csproj.CoreCompileInputs.cache
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/zerotweaks.sourcelink.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/zerotweaks.dll
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/refint/zerotweaks.dll
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/obj/Release/zerotweaks.pdb

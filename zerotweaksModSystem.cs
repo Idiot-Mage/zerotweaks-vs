@@ -7,7 +7,8 @@ using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using Vintagestory.API.Common.Entities;
-
+using Vintagestory.API.Util;
+using Vintagestory.API.Datastructures;
 
 public class zerotweaksModSystem : ModSystem{
 	public static int version = 1;
@@ -37,8 +38,9 @@ public class zerotweaksModSystem : ModSystem{
         ICoreServerAPI sapi;
         
 	public override void Start(ICoreAPI api){
-		api.RegisterEntityBehaviorClass("zerotweaksRust",typeof(zerotweaksRust));
 		Mod.Logger.Notification("hello from zerotweaks");
+		api.RegisterEntityBehaviorClass("zerotweaksRust",typeof(zerotweaksRust));
+		api.RegisterEntityBehaviorClass("zerotweaksWraith",typeof(zerotweaksWraith));
 	}
 
 	public override void StartServerSide(ICoreServerAPI api){
@@ -58,21 +60,25 @@ public class zerotweaksModSystem : ModSystem{
 		
 	}
 	
-	public void temporalDecrease(float dt){
+	int spawnTimer = 0;
+	private void temporalDecrease(float dt){
 		if(!zeroConf.harderTempStorms){return;}
 		
 		var stormData = sapi.ModLoader.GetModSystem<SystemTemporalStability>().StormData;
+		if(stormData.nowStormActive){
+			spawnTimer++;
+		}
 		foreach(var plr in sapi.World.AllOnlinePlayers){
 			if(stormData.nowStormActive){
 				if(stormData!=null){
 					var strength = stormData.stormGlitchStrength;
 					double amount = 0;
 					if(strength<0.67f){
-						amount=0.0025;
+						amount=0.0035;
 						//Mod.Logger.Notification("light");
 					}
 					if(strength>=0.67f && strength<0.9f){
-						amount=0.0035;
+						amount=0.0045;
 						//Mod.Logger.Notification("medium");
 					}
 					if(strength>=0.9f){
@@ -82,6 +88,31 @@ public class zerotweaksModSystem : ModSystem{
 					
 					double oldStability = plr.Entity.WatchedAttributes.GetDouble("temporalStability");
 					plr.Entity.WatchedAttributes.SetDouble("temporalStability", oldStability-amount);
+					
+					Random r = plr.Entity.World.Rand;
+					int num = r.Next(0,3);
+					int targetnum = 0;
+					int targettime = 28;
+					
+					//this is kinda bad but i was struggling with rng plus its like 3am
+					if(spawnTimer>=targettime && num==targetnum){
+						spawnTimer=0;
+						EntityProperties type = plr.Entity.World.GetEntityType(new AssetLocation("zerotweaks:wraith"));
+						Entity entity = plr.Entity.World.ClassRegistry.CreateEntity(type);
+						plr.Entity.World.SpawnEntity(entity);
+						
+						int rngx = r.Next((int)plr.Entity.ServerPos.X-25,(int)plr.Entity.ServerPos.X+25);
+						int rngy = r.Next((int)plr.Entity.ServerPos.Y,(int)plr.Entity.ServerPos.Y+5);
+						int rngz = r.Next((int)plr.Entity.ServerPos.Z-25,(int)plr.Entity.ServerPos.Z+25);
+						Vec3d spawnPos = new Vec3d(rngx,rngy,rngz);
+						
+						entity.ServerPos.SetPosWithDimension(spawnPos);
+						entity.Pos.SetFrom(entity.ServerPos);
+						entity.PositionBeforeFalling.Set(entity.ServerPos.X,entity.ServerPos.Y,entity.ServerPos.Z);
+						entity.Attributes.SetString("origin","worldgen");
+					}else if(spawnTimer>=targettime && num!=targetnum){
+						spawnTimer=0;
+					}
 				}
 			}
 		}
@@ -157,6 +188,49 @@ public class zerotweaksModSystem : ModSystem{
 		}
 	}
 
+}
+
+public class zerotweaksWraith : EntityBehavior{
+	public override string PropertyName() => "zerotweaksWraith";
+	
+	EntityPlayer target;
+	int updateTime = 0;
+	public zerotweaksWraith(Entity entity) : base(entity){
+
+	}
+	
+	public override void OnGameTick(float dt){
+		base.OnGameTick(dt);
+		if(target!=null){
+			updateTime++;
+			if(updateTime>120){
+				target=null;
+				updateTime=0;
+				return;
+			}
+			
+			double dist = entity.ServerPos.DistanceTo(target.ServerPos.XYZ);
+			if(dist>60){
+				EntityBehaviorHealth health = entity.GetBehavior<EntityBehaviorHealth>();
+				health.Health=-99;
+			}
+			
+			double speed = Math.Clamp(dist/27,0.025,1);
+			Vec3d dir = (target.ServerPos.XYZ-entity.ServerPos.XYZ).Normalize();
+			
+			entity.ServerPos.Yaw = (float)Math.Atan2(dir.X,dir.Z);
+			entity.Pos.Yaw = (float)Math.Atan2(dir.X,dir.Z);
+			
+			dir*=speed;
+			if(dist>0.5){
+				entity.ServerPos.Add(dir.X,dir.Y,dir.Z);
+				entity.Pos.SetPos(entity.ServerPos.X,entity.ServerPos.Y,entity.ServerPos.Z);
+			}
+		}else{
+			target = entity.World.NearestPlayer(entity.ServerPos.X,entity.ServerPos.Y,entity.ServerPos.Z).Entity;
+			updateTime = 0;
+		}
+	}
 }
 
 public class zerotweaksRust : EntityBehavior{

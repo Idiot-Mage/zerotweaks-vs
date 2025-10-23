@@ -4,9 +4,9 @@
   "name": "zerotweaks",
   "description" : "Adds various tweaks",
   "authors": ["IdiotMage"],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "side": "Universal",
   "dependencies": {
-    "game": "1.20.x-1.21.x"
+    "game": "1.20.x"
   }
 }

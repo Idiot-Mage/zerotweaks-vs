@@ -1,6 +1,8 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-land-bowtorn.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-land-drifter.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-land-shiver.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/entities/land/wraith.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/itemtypes/wraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/lang/en.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/patches/buckfast.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/patches/survival-blocktypes-wax-skep.json
@@ -11,6 +13,7 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/patches/survival-itemtypes-resource-quartz-smokyquartz.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/recipes/grid/quiver.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/recipes/grid/stick.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/shapes/entity/land/vswraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/modinfo.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/zerotweaks.dll
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/zerotweaks.deps.json
