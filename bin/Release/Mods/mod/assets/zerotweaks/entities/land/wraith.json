@@ -22,9 +22,6 @@
 	"server": {
 		"behaviors":[
 			{
-				"code": "zerotweaksRust"
-			},
-			{
 				"code": "zerotweaksWraith"
 			},
 			{

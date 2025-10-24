@@ -3,7 +3,7 @@
 		"op": "add",
 		"path": "/server/behaviors/-",
 		"value" :{"code":"zerotweaksRust"},
-		"file":"entities/land/drifter.json",
+		"file":"entities/lore/drifter.json",
 		"side":"server"
 	},
 
@@ -20,7 +20,7 @@
             "*-corrupt": 0.15,
             "*-nightmare": 0.35
         },
-        "file":"entities/land/drifter.json"
+        "file":"entities/lore/drifter.json"
     },
 
 
@@ -55,7 +55,7 @@
 				}
 			}
 		],
-		"file":"entities/land/drifter.json"
+		"file":"entities/lore/drifter.json"
 	},
 	{
 		"op":"replace",
@@ -87,7 +87,7 @@
 				}
 			}
 		],
-		"file":"entities/land/drifter.json"
+		"file":"entities/lore/drifter.json"
 	},
 	{
 		"op":"replace",
@@ -119,7 +119,7 @@
 				}
 			}
 		],
-		"file":"entities/land/drifter.json"
+		"file":"entities/lore/drifter.json"
 	},
 	{
 		"op":"replace",
@@ -151,7 +151,7 @@
 				}
 			}
 		],
-		"file":"entities/land/drifter.json"
+		"file":"entities/lore/drifter.json"
 	},
 	{
 		"op":"replace",
@@ -183,7 +183,7 @@
 				}
 			}
 		],
-		"file":"entities/land/drifter.json"
+		"file":"entities/lore/drifter.json"
 	},
 	{
 		"op":"replace",
@@ -223,6 +223,6 @@
 				}
 			}
 		],
-		"file":"entities/land/drifter.json"
+		"file":"entities/lore/drifter.json"
 	}
 ]

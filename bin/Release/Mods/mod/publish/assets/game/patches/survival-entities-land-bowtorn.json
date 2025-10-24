@@ -1,14 +1,4 @@
 [
-	{
-		"op": "add",
-		"path": "/server/behaviors/-",
-		"value" :{"code":"zerotweaksRust"},
-		"file":"entities/land/bowtorn.json",
-		"side": "server"
-	},
-    
-    
-    
     {
         "op": "replace",
         "path": "/attributes/onDeathStabilityRecoveryByType",
@@ -19,8 +9,15 @@
             "*-corrupt": 0.15,
             "*-nightmare": 0.35
         },
-        "file":"entities/land/bowtorn.json"
+        "file":"entities/lore/bowtorn.json"
     },
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value" :{"code":"zerotweaksRust"},
+		"file":"entities/lore/bowtorn.json",
+		"side":"server"
+	},
     
     
 	{
@@ -53,7 +50,7 @@
 				}
 			}
 		],
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/lore/bowtorn.json"
 	},
 	{
 		"op":"replace",
@@ -85,7 +82,7 @@
 				}
 			}
 		],
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/lore/bowtorn.json"
 	},
 	{
 		"op":"replace",
@@ -117,7 +114,7 @@
 				}
 			}
 		],
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/lore/bowtorn.json"
 	},
 	{
 		"op":"replace",
@@ -149,7 +146,7 @@
 				}
 			}
 		],
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/lore/bowtorn.json"
 	},
 	{
 		"op":"replace",
@@ -181,7 +178,7 @@
 				}
 			}
 		],
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/lore/bowtorn.json"
 	},
 	{
 		"op":"replace",
@@ -213,6 +210,6 @@
 				}
 			}
 		],
-		"file":"entities/land/bowtorn.json"
+		"file":"entities/lore/bowtorn.json"
 	}
 ]

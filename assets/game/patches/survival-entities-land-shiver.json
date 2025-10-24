@@ -3,10 +3,16 @@
 		"op": "add",
 		"path": "/server/behaviors/-",
 		"value" :{"code":"zerotweaksRust"},
-		"file":"entities/land/shiver.json",
+		"file":"entities/lore/shiver.json",
 		"side": "server"
 	},
-    
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value" :{"code":"zerotweaksRust"},
+		"file":"entities/lore/shiver.json",
+		"side":"server"
+	},
     
     
     
@@ -20,7 +26,7 @@
             "*-corrupt": 0.15,
             "*-nightmare": 0.35
         },
-        "file":"entities/land/shiver.json"
+        "file":"entities/lore/shiver.json"
     },
     
     
@@ -54,7 +60,7 @@
 				}
 			}
 		],
-		"file":"entities/land/shiver.json"
+		"file":"entities/lore/shiver.json"
 	},
 	{
 		"op":"replace",
@@ -86,7 +92,7 @@
 				}
 			}
 		],
-		"file":"entities/land/shiver.json"
+		"file":"entities/lore/shiver.json"
 	},
 	{
 		"op":"replace",
@@ -118,7 +124,7 @@
 				}
 			}
 		],
-		"file":"entities/land/shiver.json"
+		"file":"entities/lore/shiver.json"
 	},
 	{
 		"op":"replace",
@@ -150,7 +156,7 @@
 				}
 			}
 		],
-		"file":"entities/land/shiver.json"
+		"file":"entities/lore/shiver.json"
 	},
 	{
 		"op":"replace",
@@ -182,7 +188,7 @@
 				}
 			}
 		],
-		"file":"entities/land/shiver.json"
+		"file":"entities/lore/shiver.json"
 	},
 	{
 		"op":"replace",
@@ -214,6 +220,6 @@
 				}
 			}
 		],
-		"file":"entities/land/shiver.json"
+		"file":"entities/lore/shiver.json"
 	}
 ]

@@ -44,12 +44,21 @@ public class zerotweaksModSystem : ModSystem{
 	}
 
 	public override void StartServerSide(ICoreServerAPI api){
-            base.StartServerSide(api);
-            sapi = api;
-            api.Event.RegisterGameTickListener(onTickServer1s, 1000, 200);
-            api.Event.RegisterGameTickListener(temporalDecrease, 1500, 200);
+		base.StartServerSide(api);
+		sapi = api;
+		api.Event.RegisterGameTickListener(onTickServer1s, 1000, 200);
+		api.Event.RegisterGameTickListener(temporalDecrease, 1500, 200);
+		
+		//literally no idea why i cant do this with json anymore
+		api.Event.OnEntitySpawn += (entity) =>{
+			string code = entity.Code?.Path ?? "";
+
+			if(code.Contains("wraith")){
+				entity.AddBehavior(new zerotweaksRust(entity));
+			}
+		};
             
-            loadConfig(api);
+		loadConfig(api);
 	}
 
 	public override void StartClientSide(ICoreClientAPI api){
@@ -92,7 +101,7 @@ public class zerotweaksModSystem : ModSystem{
 					Random r = plr.Entity.World.Rand;
 					int num = r.Next(0,3);
 					int targetnum = 0;
-					int targettime = 28;
+					int targettime = 25;
 					
 					//this is kinda bad but i was struggling with rng plus its like 3am
 					if(spawnTimer>=targettime && num==targetnum){
@@ -215,7 +224,7 @@ public class zerotweaksWraith : EntityBehavior{
 				health.Health=-99;
 			}
 			
-			double speed = Math.Clamp(dist/27,0.025,1);
+			double speed = Math.Clamp(dist/35,0.025,1);
 			Vec3d dir = (target.ServerPos.XYZ-entity.ServerPos.XYZ).Normalize();
 			
 			entity.ServerPos.Yaw = (float)Math.Atan2(dir.X,dir.Z);
@@ -240,6 +249,9 @@ public class zerotweaksRust : EntityBehavior{
 		EntityBehaviorHealth health = entity.GetBehavior<EntityBehaviorHealth>();
 		if(health!=null){
 			health.onDamaged+=reduceDamage;
+			//entity.World.Logger.Notification("A");
+		}else{
+			//entity.World.Logger.Notification("B");
 		}
 	}
 	
@@ -254,19 +266,24 @@ public class zerotweaksRust : EntityBehavior{
 		if(causeEntity is EntityPlayer plyr){
 			ItemSlot slot = plyr.RightHandItemSlot;
 			ItemStack stack = slot?.Itemstack;
+			//entity.World.Logger.Notification("is player");
 			if(stack!=null){
+				//entity.World.Logger.Notification("found stack");
 				AssetLocation asset = stack.Collectible.Code;
 				if(!asset.Path.Contains("falx") && !asset.Path.Contains("bow")){
 					damage*=0.5f;
+					//entity.World.Logger.Notification("is not falx");
 				}
 				if(asset.Path.Contains("bow")){
 					damage*=0.75f;
+					//entity.World.Logger.Notification("is bow");
 				}
 			}
 		}else{
 			damage*=0.5f;
+			//entity.World.Logger.Notification("n/a reducing");
 		}
-		
+		//entity.World.Logger.Notification(damage.ToString());
 		return damage;
 	}
 }

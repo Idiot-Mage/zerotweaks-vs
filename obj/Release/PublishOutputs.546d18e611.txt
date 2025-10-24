@@ -1,6 +1,6 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-land-bowtorn.json
-/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-land-drifter.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-land-shiver.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/game/patches/survival-entities-lore-drifter.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/entities/land/wraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/itemtypes/wraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/publish/assets/zerotweaks/lang/en.json
