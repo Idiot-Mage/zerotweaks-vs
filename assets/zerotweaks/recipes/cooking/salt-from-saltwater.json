@@ -1,0 +1,75 @@
+[
+
+	{
+		code: "game:salt", shape: { base: "block/food/meal/liquid" },
+		perishableProps: { type: "none", freshHours: { avg: 36 }, transitionHours: { avg: 36 }, transitionRatio: 1, transitionedStack: { type: "item", code: "game:saltwaterportion" } },
+		ingredients: [
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			}
+		],
+		cooksInto: { type: "Item", code: "game:salt", quantity: 1 }
+	},
+
+	{
+		code: "game:salt", shape: { base: "block/food/meal/liquid" },
+		perishableProps: { type: "none", freshHours: { avg: 36 }, transitionHours: { avg: 36 }, transitionRatio: 1, transitionedStack: { type: "item", code: "game:saltwaterportion" } },
+		ingredients: [
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			},
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			}
+		],
+		cooksInto: { type: "Item", code: "game:salt", quantity: 2 }
+	},
+
+	{
+		code: "game:salt", shape: { base: "block/food/meal/liquid" },
+		perishableProps: { type: "none", freshHours: { avg: 36 }, transitionHours: { avg: 36 }, transitionRatio: 1, transitionedStack: { type: "item", code: "game:saltwaterportion" } },
+		ingredients: [
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			},
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			},
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			}
+		],
+		cooksInto: { type: "Item", code: "game:salt", quantity: 3 }
+	},
+
+	{
+		code: "game:salt", shape: { base: "block/food/meal/liquid" },
+		perishableProps: { type: "none", freshHours: { avg: 36 }, transitionHours: { avg: 36 }, transitionRatio: 1, transitionedStack: { type: "item", code: "game:saltwaterportion" } },
+		ingredients: [
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			},
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			},
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			},
+			{
+				code: "game:water", validStacks: [ { type: "item", code: "game:saltwaterportion", shapeElement: "bowl/water" } ],
+				minQuantity: 1, maxQuantity: 1, portionSizeLitres: 1
+			}
+		],
+		cooksInto: { type: "Item", code: "game:salt", quantity: 4 }
+	},
+
+]

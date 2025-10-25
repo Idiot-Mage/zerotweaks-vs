@@ -1,6 +1,7 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-entities-land-bowtorn.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-entities-land-shiver.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-entities-lore-drifter.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/game/patches/survival-itemtypes-resource-metalbit.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/entities/land/wraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/itemtypes/wraith.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/lang/en.json
@@ -11,6 +12,7 @@
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/patches/survival-itemtypes-resource-quartz-clearquartz.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/patches/survival-itemtypes-resource-quartz-rosequartz.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/patches/survival-itemtypes-resource-quartz-smokyquartz.json
+/media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/recipes/cooking/salt-from-saltwater.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/recipes/grid/quiver.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/recipes/grid/stick.json
 /media/gamedisk/vintagestory/zerotweaks/zerotweaks/bin/Release/Mods/mod/assets/zerotweaks/shapes/entity/land/vswraith.json

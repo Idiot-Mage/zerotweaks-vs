@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("zerotweaks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb0ad939488ba7f522b7c3c26350cf0592bf794e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c035d87de2ade5ccb4c760ef1d78b9290dc97fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("zerotweaks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("zerotweaks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

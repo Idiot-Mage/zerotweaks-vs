@@ -1,0 +1,8 @@
+[
+  {
+    "op": "replace",
+    "path": "/combustiblePropsByType/*-steel/meltingPoint",
+    "value": 1450,
+    "file": "itemtypes/resource/metalbit.json"
+  }
+]
