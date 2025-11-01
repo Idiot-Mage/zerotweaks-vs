@@ -14,7 +14,7 @@
 		"side":"server"
 	},
     
-    
+
     
     {
         "op": "replace",
@@ -29,6 +29,39 @@
         "file":"entities/lore/shiver.json"
     },
     
+    
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/canClimbAnywhere",
+    "value": true,
+    "file": "game:entities/lore/shiver.json",
+    "side": "Server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/climbTouchDistance",
+    "value": 0.01,
+    "file": "game:entities/lore/shiver.json",
+    "side": "Server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/fallDamageMultiplier",
+    "value": 0.0,
+    "file": "game:entities/lore/shiver.json",
+    "side": "Server"
+  },
+  {
+    "enabled": true,
+    "op": "add",
+    "path": "/rotateModelOnClimb",
+    "value": true,
+    "file": "game:entities/lore/shiver.json",
+    "side": "Server"
+  },
     
 	{
 		"op":"replace",
